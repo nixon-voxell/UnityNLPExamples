@@ -1,0 +1,6 @@
+[submodule "Packages/UnityNLP"]
+	path = Packages/UnityNLP
+	url = https://github.com/voxell-tech/UnityNLP
+[submodule "Packages/UnityUtil"]
+	path = Packages/UnityUtil
+	url = https://github.com/voxell-tech/UnityUtil
