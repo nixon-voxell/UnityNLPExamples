@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Samples/VX NLP/0.1.1/NLP Bsaic Examples/Scenes/NLPBasicExamples.unity
+    guid: 951b0bdccb09fba49843e2e8e8033d08
+  - enabled: 0
+    path: Assets/Scenes/TestScene.unity
+    guid: b953b10b6db56284585b92e713808030
+  - enabled: 0
+    path: Assets/Scenes/TestScene 1.unity
+    guid: 45e32a71231132e459d48e0da7436059
+  - enabled: 0
+    path: Assets/Scenes/TestScene 2.unity
+    guid: 9acef84b4eb804f478a1f229f0055473
   m_configObjects: {}

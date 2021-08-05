@@ -123,6 +123,65 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &590650652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590650653}
+  - component: {fileID: 590650654}
+  m_Layer: 0
+  m_Name: NLPNamedEntityRecognition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590650653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590650652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &590650654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590650652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0f953702583594abe30862e5e953c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameFinderModel: Models/NameFind
+  sentence: Mr. Bean is a British sitcom created by Rowan Atkinson and Richard Curtis,
+    produced by Tiger Aspect and starring Atkinson as the title character.
+  models:
+  - date
+  - location
+  - money
+  - organization
+  - percentage
+  - person
+  - time
+  ner: 'Mr. <person>Bean</person> is a British sitcom created by <person>Rowan Atkinson</person>
+    and <person>Richard Curtis</person>, produced by <organization>Tiger Aspect</organization>
+    and starring <location>Atkinson</location> as the title character.
+
+'
 --- !u!1 &653260035
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +229,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1076685971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076685973}
+  - component: {fileID: 1076685972}
+  m_Layer: 0
+  m_Name: CustomInspectorTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1076685972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076685971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16032a028ede2244f9b81f3ff13e29d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testScene: TestScene
+  testSceneArray:
+  - TestScene 1
+  - TestScene 2
+  inspectOnlyInt: 0
+--- !u!4 &1076685973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076685971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687258581
 GameObject:
@@ -328,6 +435,140 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &2050903286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2050903288}
+  - component: {fileID: 2050903287}
+  m_Layer: 0
+  m_Name: NLPPOSTagger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2050903287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050903286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6cc2e7a6e781447a13ceb477deb0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tokenizerModel: Models/EnglishTok.nbin
+  posTaggerModel: Models/EnglishPOS.nbin
+  tagDict: Models/Parser/tagdict
+  sentence: Mr. Bean is a British sitcom created by Rowan Atkinson and Richard Curtis.
+  tokens:
+  - Mr.
+  - Bean
+  - is
+  - a
+  - British
+  - sitcom
+  - created
+  - by
+  - Rowan
+  - Atkinson
+  - and
+  - Richard
+  - Curtis
+  - .
+  posTags:
+  - NNP
+  - NNP
+  - VBZ
+  - DT
+  - JJ
+  - NN
+  - VBN
+  - IN
+  - NNP
+  - NNP
+  - CC
+  - NNP
+  - NNP
+  - .
+--- !u!4 &2050903288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050903286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2103527108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103527110}
+  - component: {fileID: 2103527109}
+  m_Layer: 0
+  m_Name: NLPSentenceSplitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2103527109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103527108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8670187ce37de8469dad64ccff13a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splitterModel: Models/EnglishSD.nbin
+  paragraph: Mr. Bean is a British sitcom created by Rowan Atkinson and Richard Curtis,
+    produced by Tiger Aspect and starring Atkinson as the title character. The sitcom
+    consists of 15 episodes that were co-written by Atkinson alongside Curtis and
+    Robin Driscoll; for the pilot, it was co-written by Ben Elton. The series was
+    originally broadcast on ITV, beginning with the pilot on 1 January 1990[1] and
+    ending with "The Best Bits of Mr. Bean" on 15 December 1995.
+  sentences:
+  - 'Mr. Bean is a British sitcom created by Rowan Atkinson and Richard Curtis, produced
+    by Tiger Aspect and starring Atkinson as the title character. '
+  - 'The sitcom consists of 15 episodes that were co-written by Atkinson alongside
+    Curtis and Robin Driscoll; for the pilot, it was co-written by Ben Elton. '
+  - The series was originally broadcast on ITV, beginning with the pilot on 1 January
+    1990[1] and ending with "The Best Bits of Mr. Bean" on 15 December 1995.
+--- !u!4 &2103527110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103527108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138677391
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,10 +693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tokenizerModel: Models/EnglishTok.nbin
   sentence: "Elon Reeve Musk FRS (/\u02C8i\u02D0l\u0252n/ EE-lon; born June 28, 1971)
-    is an entrepreneur and business magnate. He is the founder, CEO, and Chief Engineer
-    at SpaceX; early stage investor,[note 2] CEO, and Product Architect of Tesla,
-    Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI.
-    A centibillionaire, Musk is one of the richest people in the world."
+    is an entrepreneur and business magnate."
   tokens:
   - Elon
   - Reeve
@@ -477,66 +715,6 @@ MonoBehaviour:
   - and
   - business
   - magnate
-  - .
-  - He
-  - is
-  - the
-  - founder
-  - ','
-  - CE
-  - O
-  - ','
-  - and
-  - Chief
-  - Engineer
-  - at
-  - SpaceX
-  - ;
-  - early
-  - stage
-  - investor
-  - ',['
-  - note
-  - 2
-  - ']'
-  - CE
-  - O
-  - ','
-  - and
-  - Product
-  - Architect
-  - of
-  - Tesla
-  - ','
-  - Inc.
-  - ;
-  - founder
-  - of
-  - The
-  - Boring
-  - Compan
-  - y
-  - ;
-  - and
-  - co-
-  - founder
-  - of
-  - Neuralink
-  - and
-  - OpenAI.
-  - A
-  - centibillionaire
-  - ','
-  - Musk
-  - is
-  - one
-  - of
-  - the
-  - richest
-  - people
-  - in
-  - the
-  - world
   - .
 --- !u!4 &2143714807
 Transform:

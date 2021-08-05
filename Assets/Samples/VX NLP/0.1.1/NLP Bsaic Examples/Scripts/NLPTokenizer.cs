@@ -10,10 +10,12 @@ public class NLPTokenizer : MonoBehaviour
   [TextArea(1, 5)] public string sentence;
   public string[] tokens;
 
+  private EnglishMaximumEntropyTokenizer tokenizer;
+
   [Button]
   public void Tokenize()
   {
-    EnglishMaximumEntropyTokenizer tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
+    tokenizer = new EnglishMaximumEntropyTokenizer(FileUtil.GetStreamingAssetFilePath(tokenizerModel));
     tokens = tokenizer.Tokenize(sentence);
   }
 }
