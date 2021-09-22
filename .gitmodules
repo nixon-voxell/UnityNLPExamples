@@ -4,3 +4,6 @@
 [submodule "Packages/UnityUtil"]
 	path = Packages/UnityUtil
 	url = https://github.com/voxell-tech/UnityUtil
+[submodule "Packages/UnityAI"]
+	path = Packages/UnityAI
+	url = https://github.com/voxell-tech/UnityAI

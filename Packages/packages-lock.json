@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.unity.burst": {
-      "version": "1.5.4",
+      "version": "1.5.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -10,7 +10,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "1.5.7",
+      "version": "1.7.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -36,7 +36,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.6",
+      "version": "3.0.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -45,7 +45,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.8",
+      "version": "2.0.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -110,7 +110,7 @@
       }
     },
     "com.unity.test-framework": {
-      "version": "1.1.24",
+      "version": "1.1.27",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -130,7 +130,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.5.5",
+      "version": "1.5.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -165,11 +165,21 @@
       },
       "url": "https://packages.unity.com"
     },
+    "voxell.ai": {
+      "version": "file:UnityAI",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "voxell.nlp": {
       "version": "file:UnityNLP",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "voxell.util": "1.1.0",
+        "voxell.ai": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "2.0.0"
+      }
     },
     "voxell.util": {
       "version": "file:UnityUtil",
@@ -177,7 +187,7 @@
       "source": "embedded",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
-        "com.unity.collections": ""
+        "com.unity.collections": "0.15.0-preview.21"
       }
     },
     "com.unity.modules.ai": {

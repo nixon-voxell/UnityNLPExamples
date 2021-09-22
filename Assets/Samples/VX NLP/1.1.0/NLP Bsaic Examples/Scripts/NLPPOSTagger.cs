@@ -1,17 +1,14 @@
 using UnityEngine;
-using OpenNLP.Tools.PosTagger;
-using OpenNLP.Tools.Tokenize;
-using Voxell.Inspector;
 using Voxell;
+using Voxell.NLP.PosTagger;
+using Voxell.NLP.Tokenize;
+using Voxell.Inspector;
 
 public class NLPPOSTagger : MonoBehaviour
 {
-  [StreamingAssetFilePath]
-  public string tokenizerModel;
-  [StreamingAssetFilePath]
-  public string posTaggerModel;
-  [StreamingAssetFilePath]
-  public string tagDict;
+  [StreamingAssetFilePath] public string tokenizerModel;
+  [StreamingAssetFilePath] public string posTaggerModel;
+  [StreamingAssetFilePath] public string tagDict;
   [TextArea(1, 5)] public string sentence;
   public string[] tokens;
   public string[] posTags;
