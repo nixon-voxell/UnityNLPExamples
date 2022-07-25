@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/VX NLP/1.1.0/NLP Bsaic Examples/Scenes/NLPBasicExamples.unity
+    path: Assets/Samples/VX NLP/1.2.0/NLP Bsaic Examples/Scenes/NLPBasicExamples.unity
     guid: 951b0bdccb09fba49843e2e8e8033d08
   - enabled: 0
     path: Assets/Scenes/TestScene.unity

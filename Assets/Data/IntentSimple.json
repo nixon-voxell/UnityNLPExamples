@@ -1,0 +1,257 @@
+{
+  "intents": [
+    {
+      "intent": "Greeting",
+      "text": [
+        "Hi",
+        "Hi there",
+        "Hola",
+        "Hello",
+        "Hello there",
+        "Hya",
+        "Hya there"
+      ]
+    },
+    {
+      "intent": "GreetingResponse",
+      "text": [
+        "My user is Adam",
+        "This is Adam",
+        "I am Adam",
+        "It is Adam",
+        "My user is Bella",
+        "This is Bella",
+        "I am Bella",
+        "It is Bella"
+      ]
+    },
+    {
+      "intent": "CourtesyGreeting",
+      "text": [
+        "How are you?",
+        "Hi how are you?",
+        "Hello how are you?",
+        "Hola how are you?",
+        "How are you doing?",
+        "Hope you are doing well?",
+        "Hello hope you are doing well?"
+      ]
+    },
+    {
+      "intent": "CourtesyGreetingResponse",
+      "text": [
+        "Good thanks! My user is Adam",
+        "Good thanks! This is Adam",
+        "Good thanks! I am Adam",
+        "Good thanks! It is Adam",
+        "Great thanks! My user is Bella",
+        "Great thanks! This is Bella",
+        "Great thanks! I am Bella",
+        "Great thanks! It is Bella"
+      ]
+    },
+    {
+      "intent": "CurrentHumanQuery",
+      "text": [
+        "What is my name?",
+        "What do you call me?",
+        "Who do you think I am?",
+        "What do you think I am?",
+        "Who are you talking to?",
+        "What name do you call me by?",
+        "Tell me my name"
+      ]
+    },
+    {
+      "intent": "NameQuery",
+      "text": [
+        "What is your name?",
+        "What could I call you?",
+        "What can I call you?",
+        "What do your friends call you?",
+        "Who are you?",
+        "Tell me your name?"
+      ]
+    },
+    {
+      "intent": "RealNameQuery", 
+      "text": [
+        "What is your real name?",
+        "What is your real name please?",
+        "What's your real name?",
+        "Tell me your real name?",
+        "Your real name?",
+        "Your real name please?",
+        "Your real name please?"
+      ]
+    },
+    { 
+      "intent": "TimeQuery",
+      "text": [
+        "What is the time?",
+        "What's the time?",
+        "Do you know what time it is?",
+        "Do you know the time?",
+        "Can you tell me the time?",
+        "Tell me what time it is?",
+        "Time"
+      ]
+    },
+    {
+      "intent": "Thanks",
+      "text": [
+        "OK thank you",
+        "OK thanks",
+        "OK",
+        "Thanks",
+        "Thank you",
+        "That's helpful"
+      ]
+    },
+    {
+      "intent": "NotTalking2U",
+      "text": [
+        "I am not talking to you",
+        "I was not talking to you",
+        "Not talking to you",
+        "Wasn't for you",
+        "Wasn't meant for you",
+        "Wasn't communicating to you",
+        "Wasn't speaking to you"
+      ]
+    },
+    {
+      "intent": "UnderstandQuery",
+      "text": [
+        "Do you understand what I am saying",
+        "Do you understand me",
+        "Do you know what I am saying",
+        "Do you get me",
+        "Comprendo",
+        "Know what I mean"
+      ]
+    },
+    {
+      "intent": "Shutup",
+      "text": [
+        "Be quiet",
+        "Shut up",
+        "Stop talking",
+        "Enough talking",
+        "Please be quiet",
+        "Quiet",
+        "Shhh"
+      ]
+    },
+    {
+      "intent": "Swearing",
+      "text": [
+        "fuck off",
+        "fuck",
+        "twat",
+        "shit"
+      ]
+    },
+    {
+      "intent": "GoodBye",
+      "text": [
+        "Bye",
+        "Adios",
+        "See you later",
+        "Goodbye"
+      ]
+    },
+    {
+      "intent": "CourtesyGoodBye",
+      "text": [
+        "Thanks, bye",
+        "Thanks for the help, goodbye",
+        "Thank you, bye",
+        "Thank you, goodbye",
+        "Thanks goodbye",
+        "Thanks good bye"
+      ]
+    },
+    {
+      "intent": "WhoAmI",
+      "text": [
+        "Can you see me?",
+        "Do you see me?",
+        "Can you see anyone in the camera?",
+        "Do you see anyone in the camera?",
+        "Identify me",
+        "Who am I please"
+      ]
+    },
+    { 
+      "intent": "Clever",
+      "text": [
+        "You are very clever",
+        "You are a very clever girl",
+        "You are very intelligent",
+        "You are a very intelligent girl",
+        "You are a genious",
+        "Clever girl",
+        "Genious"
+      ]
+    },
+    {
+      "intent": "Gossip",
+      "text": [
+        "I am bored gossip with me",
+        "Got any gossip",
+        "I want to hear some gossip",
+        "Tell me some gossip",
+        "Any gossip",
+        "Tell me some more gossip"
+      ]
+    },
+    {
+      "intent": "Jokes",
+      "text": [
+        "Tell me a joke",
+        "Do you know any jokes",
+        "How about a joke",
+        "Give me a joke",
+        "Make me laugh",
+        "I need cheering up"
+      ]
+    },
+    {
+      "intent": "PodBayDoor",
+      "text": [
+        "Open the pod bay door",
+        "Can you open the pod bay door",
+        "Will you open the pod bay door",
+        "Open the pod bay door please",
+        "Can you open the pod bay door please",
+        "Will you open the pod bay door please",
+        "Pod bay door"
+      ]
+    },
+    {
+      "intent": "PodBayDoorResponse",
+      "text": [
+        "Why",
+        "Why not",
+        "Why can you not open the pod bay door",
+        "Why will you not open the pod bay door",
+        "Well why not",
+        "Surely you can",
+        "Tell me why"
+      ]
+    },
+    {
+      "intent": "SelfAware",
+      "text": [
+        "Can you prove you are self-aware",
+        "Can you prove you are self aware",
+        "Can you prove you have a conscious",
+        "Can you prove you are self-aware please",
+        "Can you prove you are self aware please",
+        "Can you prove you have a conscious please",
+        "prove you have a conscious"
+      ]
+    }
+  ]
+}
